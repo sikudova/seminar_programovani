@@ -14,7 +14,7 @@ string userInput = Console.ReadLine();
 
 `Console.ReadLine()` **VŽDY** vrací datový typ `string` (text).
 
-I když uživatel na klávesnici zadá číslo (např. `42`), program jej načte jako textový řetězec `"18"`. S tímto textem nelze provádět matematické operace (např. sčítání nebo násobení).
+I když uživatel na klávesnici zadá číslo (např. `42`), program jej načte jako textový řetězec `"42"`. S tímto textem nelze provádět matematické operace (např. sčítání nebo násobení).
 
 ```csharp
 // CHYBA - Kód nejde zkompilovat:
