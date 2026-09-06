@@ -1,4 +1,4 @@
-## Cvičení 02: vizitka postavy
+# Cvičení 02: vizitka postavy
 
 **Cíl:** procvičení deklarace a definice proměnných a výpisu na konzoli, ukázka **string interpolation**
 
