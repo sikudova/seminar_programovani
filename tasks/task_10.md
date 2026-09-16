@@ -13,3 +13,5 @@ Great, the number is within the permitted range!
 Enter a number between 1 and 10: 66
 Error! The number is outside the range.
 ```
+
+**Pokud máš hotovo, uprav program tak, aby si uživatel sám zvolil hranice intervalu.**
