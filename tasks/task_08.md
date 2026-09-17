@@ -1,5 +1,4 @@
-# Cvičení 08: účtenka z obchodu
-
+# Cvičení 08: písemka
 **Cíl:** procvičení jednoduchého větvení
 
 Napiš program, který se zeptá uživatele na počet získaných bodů z písemky.
