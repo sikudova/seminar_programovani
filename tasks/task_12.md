@@ -25,6 +25,31 @@ switch (promenna)
 }
 ```
 
+Ve `switchi` je možné více případů (`cases`) spojit dohromady:
+
+```csharp
+switch (promenna)
+{
+    // Více case nad sebou bez kódu a breaku (sdílejí jednu akci)
+    case hodnota1:
+    case hodnota2:
+    case hodnota3:
+        // Kód, který se provede, pokud je proměnná rovna 
+        // hodnotě 1, 2 NEBO 3
+        break; // Tady už break být musí!
+
+    // Samostatný případ
+    case hodnota4:
+        // Kód pouze pro hodnotu 4
+        break;
+
+    // Záchranná síť pro všechno ostatní
+    default:
+        // Kód, když hodnota nezapadá nikam jinam
+        break;
+}
+```
+
 #### Příklad 01: typ platby
 
 Napiš program, který vyzve uživatele k výběru platební metody (card, cash, crypto). Pokud uživatel zadá jinou možnost, program vypíše varovnou hlášku.
