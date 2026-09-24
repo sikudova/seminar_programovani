@@ -30,7 +30,5 @@ Uživatel se rozhodne, zda si chce koupit magický lektvar za 50 zlaťáků. Odp
 Program provede kontrolu nákupu: pokud uživatel odpověděl ano (yes) a má dostatek zlaťáků, proěhne nákup (vypíše se informativní hláška). V opačném případně nákup neproběhne (vypíše se informativní hláška).
 
 ```text
-I will give you a music tip according to your music taste.
-Choose a genre (pop, rock, country, česká klasika): nevim
-Smolík, listen to Vysoký Jalovec.
+WIP
 ```
