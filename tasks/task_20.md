@@ -30,8 +30,9 @@ for ( init; condition; increment ) {
 }
 ```
 
-<img width="300" alt="for_loop_flow_diagram" src="https://github.com/user-attachments/assets/33febc42-f189-4bdd-95e4-f1bc9393f345" />
-
+<p align="center">
+   <img width="300" alt="for_loop_flow_diagram" src="https://github.com/user-attachments/assets/33febc42-f189-4bdd-95e4-f1bc9393f345" />
+</p>
 
 Příklad jednoduchého `for` cyklu:
 
@@ -42,3 +43,20 @@ Příklad jednoduchého `for` cyklu:
  }
  Console.ReadLine();
 ```
+
+Příklad `for` cyklu v kombinaci s podmínkou `if` uvnitř:
+
+```csharp
+/* for loop execution */
+for (int a = 10; a < 20; a = a + 1) {
+   if(a%2==0)
+      Console.WriteLine("Even Value: {0}", a);
+}
+```
+
+### Aplikace `for` cyklu
+* procházení pole/kolekce/seznamu,
+* hledání v poli,
+* generování posloupností,
+* procházení textu,
+* vykreslování tvarů v konzoli.
