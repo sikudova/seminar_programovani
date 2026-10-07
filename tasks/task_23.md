@@ -1,4 +1,4 @@
-# Cvičení 23: vnořený `for` cyklus 
+# Cvičení 23: vnořený `for` cyklus (grafika)
 
 **Cíl:** naučit se vnořovat `for` cykly
 
