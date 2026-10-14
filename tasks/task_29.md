@@ -6,7 +6,7 @@ Napiš program, který simuluje zadání bankovního PINu (nějaký si zvolte).
 
 Uživatel má na zadání maximálně 3 pokusy. Pokud zadá správný PIN, program ho pustí dál. Pokud zadá špatný PIN, program ho upozorní, odečte pokus a zkusí to znovu. Pokud vyčerpá všechny 3 pokusy, karta se zablokuje.
 
-_Poznámka: vstup jako text nebo reálné číslo teď neřeš._
+_Poznámka: vstup i pin ber jako řetězec._
 
 ```text
 Enter a PIN: 8451
