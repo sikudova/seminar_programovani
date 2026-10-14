@@ -7,5 +7,5 @@ Napiš program, který od uživatele načte dvě celá čísla a vypočítá jej
 ```text
 Enter a first number (greater one): 55567
 Enter a second number (smaller one): 32399
-The greatset common divisor of numbers 55567 and 32399 is 181
+The greatset common divisor of numbers 55567 and 32399 is 181.
 ```
