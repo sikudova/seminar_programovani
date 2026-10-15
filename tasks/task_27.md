@@ -14,5 +14,5 @@ Pomocí `while` cyklu počítej měsíce a přičítej měsíční vklad, dokud 
 Enter initial deposit: 10000
 Enter monthly contribution: 1500
 Enter target amount: 22300
-Goal reached in 15 months. Total saved amount is 22500.
+Goal reached in 9 months. Total saved amount is 23500.
 ```
