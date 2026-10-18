@@ -1,4 +1,4 @@
-# Cvičení 26: `break` a `continue` příkazy
+# Cvičení 36: `break` a `continue` příkazy
 
 **Cíl:** naučit se ukončovat cykly a přeskakovat určité kroky v cyklu
 
