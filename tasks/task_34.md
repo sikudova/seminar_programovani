@@ -1,4 +1,4 @@
-# Cvičení 34: Celočíselné dělení
+# Cvičení 34: celočíselné dělení
 
 **Cíl:** procvičení `while` cyklu
 
