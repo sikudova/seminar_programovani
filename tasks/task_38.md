@@ -96,7 +96,7 @@ _Returns `true` if the obj parameter equals the value of this instance; otherwis
 
 
 ### `IsDigit(Char)`
-C# dokumentace: [Equals](https://learn.microsoft.com/en-us/dotnet/api/system.char.isdigit?view=net-10.0)
+C# dokumentace: [IsDigit](https://learn.microsoft.com/en-us/dotnet/api/system.char.isdigit?view=net-10.0)
 
 ```csharp
 public static bool IsDigit(char c);
@@ -107,7 +107,7 @@ _Indicates whether a Unicode character is categorized as a decimal digit._
 _Returns `true` if `c` is a decimal digit; otherwise, `false`._
 
 ### `IsLetter(Char)`
-C# dokumentace: [Equals](https://learn.microsoft.com/en-us/dotnet/api/system.char.isletter?view=net-10.0)
+C# dokumentace: [IsLetter](https://learn.microsoft.com/en-us/dotnet/api/system.char.isletter?view=net-10.0)
 
 ```csharp
 public static bool IsLetter(char c);
@@ -118,7 +118,7 @@ _Indicates whether the specified Unicode character is categorized as a Unicode l
 _Returns `true` if `c` is a letter; otherwise, `false`._
 
 ### `IsLetterOrDigit(Char)`
-C# dokumentace: [Equals](https://learn.microsoft.com/en-us/dotnet/api/system.char.isletterordigit?view=net-10.0)
+C# dokumentace: [IsLetterOrDigit](https://learn.microsoft.com/en-us/dotnet/api/system.char.isletterordigit?view=net-10.0)
 
 ```csharp
 public static bool IsLetterOrDigit(char c);
@@ -130,7 +130,7 @@ _Returns `true` if `c` is a letter or a decimal digit; otherwise, `false`._
 
 
 ### `ToString(Char)`
-C# dokumentace: [Equals](https://learn.microsoft.com/en-us/dotnet/api/system.char.tostring?view=net-10.0)
+C# dokumentace: [ToString](https://learn.microsoft.com/en-us/dotnet/api/system.char.tostring?view=net-10.0)
 
 ```csharp
 public static string ToString(char c);
