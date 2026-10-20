@@ -114,6 +114,8 @@ Kombinace stříšky `^` a rozsahu `..` umožňuje definovat začátek i konec v
 
 #### Od indexu do bodu od konce `start..^end`
 
+Pro oříznutí od nějakého pevného indexu zleva, ale konec výřezu se ořízne zprava (např. zahodit určitý počet posledních znaků).
+
 ```csharp
 string text = "Programování"; // Délka = 12
 
@@ -147,6 +149,21 @@ string filename = "document.pdf";
 string extension = filename[^4..]; 
 
 Console.WriteLine(extension); // Vypíše: ".pdf"
+```
+
+#### Mezi dvěma body od konce `^start..^end`
+
+Oba okraje je možné definovat pomocí stříšky `^`.
+
+Levá hranice rozsahu musí v textu předcházet té pravé. Protože indexy od konce rostou směrem doleva, číslo u levé stříšky musí být větší než číslo u pravé stříšky.
+
+```csharp
+string text = "Programování"; // Délka = 12
+
+// Vezmi od 8. prvku od konce až po 3. prvek od konce
+string result = text[^8..^3]; 
+
+Console.WriteLine(result); // Vypíše: "ramov"
 ```
 
 ## Metody na `string`
