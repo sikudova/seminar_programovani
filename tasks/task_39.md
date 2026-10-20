@@ -166,8 +166,132 @@ string result = text[^8..^3];
 Console.WriteLine(result); // Vypíše: "ramov"
 ```
 
+## Délka řetězce
+
+Délku řetězce (počet znaků) lze zjistit pomocí vlastnosti (property) `Length`.
+
+```csharp
+string text = "Ahoj světe";
+int textLength = text.Length;
+
+Console.WriteLine(textLength); // Vypíše: 10
+```
+
 ## Metody na `string`
 
-Seznam metod na datovém typu `string`: [`string` metody]().
+Seznam metod na datovém typu `string`: [`string` metody](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-10.0#methods).
 
 Níže jsou uvedené často používané metody.
+
+### `Contains`
+C# dokumentace: [Contains](https://learn.microsoft.com/en-us/dotnet/api/system.string.contains?view=net-10.0#system-string-contains)
+
+```csharp
+public bool Contains(string value);
+```
+
+_Returns a value indicating whether a specified substring occurs within this string._
+
+_Returns `true` if the `value` parameter occurs within this string, or if `value` is the empty string (""); otherwise, `false`._
+
+Další varianta metody `Contains`:
+
+```csharp
+public bool Contains(string value, StringComparison comparisonType);
+```
+
+### `EndsWith`
+C# dokumentace: [EndsWith](https://learn.microsoft.com/en-us/dotnet/api/system.string.endswith?view=net-10.0)
+
+```csharp
+public bool EndsWith(string value);
+```
+
+_Determines whether the end of this string instance matches the specified string._
+
+_Returns `true` if `value` matches the end of this instance; otherwise, `false`._
+
+Další varianty metody `EndsWith`:
+
+```csharp
+public bool EndsWith(char value);
+public bool EndsWith(string value, StringComparison comparisonType);
+public bool EndsWith(string value, bool ignoreCase, System.Globalization.CultureInfo? culture);
+```
+
+### `StartsWith`
+C# dokumentace: [StartsWith](https://learn.microsoft.com/en-us/dotnet/api/system.string.startswith?view=net-10.0)
+
+```csharp
+public bool StartsWith(string value);
+```
+
+_Determines whether the end of this string instance matches the specified string._
+
+_Returns `true` if `value` matches the beginning of this string; otherwise, `false`._
+
+Další varianty metody `StartsWith`:
+
+```csharp
+public bool StartsWith(char value);
+public bool StartsWith(string value, StringComparison comparisonType);
+public bool StartsWith(string value, bool ignoreCase, System.Globalization.CultureInfo? culture);
+```
+
+### `IndexOf`
+C# dokumentace: [IndexOf](https://learn.microsoft.com/en-us/dotnet/api/system.string.indexof?view=net-10.0)
+
+```csharp
+public bool StartsWith(string value);
+```
+
+_Reports the zero-based index of the first occurrence of the specified string in this instance._
+
+_Returns the zero-based index position of `value` if that string is found, or `-1` if it is not. If `value` is Empty, the return value is `0`._
+
+Další varianty metody `IndexOf` (je jich kotel):
+
+```csharp
+public int IndexOf(char value);
+```
+
+### `Replace`
+C# dokumentace: [Replace](https://learn.microsoft.com/en-us/dotnet/api/system.string.replace?view=net-10.0)
+
+```csharp
+public string Replace(string oldValue, string? newValue);
+```
+
+_Returns a new string in which all occurrences of a specified string in the current instance are replaced with another specified string._
+
+_Returns a string that is equivalent to the current string except that all instances of `oldValue` are replaced with `newValue`. If `oldValue` is not found in the current instance, the method returns the current instance unchanged._
+
+### `Trim`
+C# dokumentace: [Trim](https://learn.microsoft.com/en-us/dotnet/api/system.string.trim?view=net-10.0)
+
+```csharp
+public string Trim();
+```
+
+_Removes all leading and trailing white-space characters from the current string._
+
+_Returns the string that remains after all white-space characters are removed from the start and end of the current string. If no characters can be trimmed from the current instance, the method returns the current instance unchanged._
+
+### `IsNullOrEmpty`
+C# dokumentace: [IsNullOrEmpty](https://learn.microsoft.com/en-us/dotnet/api/system.string.isnullorempty?view=net-10.0)
+
+```csharp
+public static bool IsNullOrEmpty(string? value);
+```
+
+_Indicates whether the specified string is `null` or an empty string ("")._
+
+_Returns `true` if the `value` parameter is `null` or an empty string (""); otherwise, `false`._
+
+### Další metody
+* [Concat](https://learn.microsoft.com/en-us/dotnet/api/system.string.concat?view=net-10.0),
+* [Insert](https://learn.microsoft.com/en-us/dotnet/api/system.string.insert?view=net-10.0),
+* [ToLower](https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-10.0),
+* [ToUpper](https://learn.microsoft.com/en-us/dotnet/api/system.string.toupper?view=net-10.0),
+* [TrimeEnd](https://learn.microsoft.com/en-us/dotnet/api/system.string.trimend?view=net-10.0),
+* [TrimStart](https://learn.microsoft.com/en-us/dotnet/api/system.string.trimstart?view=net-10.0).
