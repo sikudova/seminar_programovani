@@ -19,6 +19,33 @@ Když se provede operace jako `text = text + "ahoj";`, C# ve skutečnosti nezmě
 
 Pokud se provádí mnoho úprav textu za sebou (např. v cyklu), je to neefektivní pro paměť. Pro takové případy se v C# používá speciální třída `StringBuilder`.
 
+## Vytváření `stringu`
+
+* textový literál
+```csharp
+string text = "Ahoj světe";
+```
+* string interpolation:
+```csharp
+string jmeno = "Pavel";
+string pozdrav = $"Ahoj, {jmeno}!";
+```
+* konkatenace `+`
+```csharp
+string jmeno = "Pavel";
+string pozdrav = "Ahoj " + jmeno;
+```
+* převod z jiných typů
+```csharp
+string textCisla = 123.ToString();
+```
+* konstruktor `new string` – opakování znaku
+```csharp
+string stars = new string('*', 5);
+Console.WriteLine(stars);
+```
+* `StringBuilder` – postupné skládání textu (probereme podrobně později)
+
 ## Indexování
 
 `string` je v C# vnímán jako posloupnost znaků, může se tedy použít **indexování**.
