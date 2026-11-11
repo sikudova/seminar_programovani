@@ -149,7 +149,7 @@ string text = "Programování"; // Délka = 12
 // Vezmi od indexu 1 až po 3. prvek od konce
 string result = text[1..^3]; 
 
-Console.WriteLine(result); // Vypíše: "rogramová" (^3 je 3. od konce)
+Console.WriteLine(result); // Vypíše: "rogramov" (^3 je 3. od konce)
 ```
 
 #### Od začátku do bodu od konce `..^end`
@@ -269,7 +269,7 @@ public bool StartsWith(string value, bool ignoreCase, System.Globalization.Cultu
 C# dokumentace: [IndexOf](https://learn.microsoft.com/en-us/dotnet/api/system.string.indexof?view=net-10.0)
 
 ```csharp
-public bool StartsWith(string value);
+public int IndexOf(string value);
 ```
 
 _Reports the zero-based index of the first occurrence of the specified string in this instance._
