@@ -38,3 +38,47 @@ C# also provides the following **built-in reference types**:
 * dynamic,
 * object,
 * **string**.
+
+### `string`
+`string` je v C# referenční typ. Samotný textový řetězec je uložen na haldě (Heap) a proměnná v sobě drží pouze odkaz (adresu) na toto místo.
+
+Zásadní vlastností `string` je ale **immutability** (neměnnost). Jakmile se string jednou vytvoří v paměti, nelze ho už nikdy změnit.
+
+#### Výchozí chování – předání kopie reference
+
+Při předání `string`u do metody, zkopíruje se odkaz na ten samý text na haldě (nekopíruje se samotný text).
+
+Protože ale objekt `string` nejde vnitřně modifikovat, každá operace jako `+`, `.Replace()` nebo `.ToUpper()` vytvoří v paměti úplně nový `string` a vrátí odkaz na něj.
+
+```csharp
+string jmeno = "Karel";
+ZmenText(jmeno);
+Console.WriteLine(jmeno); // Vypíše: Karel
+
+void ZmenText(string text)
+{
+    // 1. Na začátku 'text' i 'jmeno' ukazují na stejný objekt "Karel" na haldě.
+
+    // 2. Následující řádek NEUPRAVÍ "Karel". Vytvoří NOVÝ string "Karel Novák" 
+    //    na jiném místě v paměti a jeho adresu uloží jen do lokální proměnné 'text'.
+    text = text + " Novák"; 
+    
+    // Původní proměnná 'jmeno' venku stále ukazuje na nedotčený "Karel".
+}
+```
+
+#### S modifikátorem `ref` u `string`
+Pokud použijete ref, nepředáváte kopii odkazu, ale odkaz na samotnou proměnnou, která odkaz drží. Když pak metoda vytvoří nový string, přepíše odkaz i v původní proměnné venku.
+
+```csharp
+string jmeno = "Karel";
+ZmenTextRef(ref jmeno);
+Console.WriteLine(jmeno); // Vypíše: Karel Novák
+
+void ZmenTextRef(ref string text)
+{
+    // Vytvoří se nový string "Karel Novák" a jeho nová adresa 
+    // se zapíše přímo do původní proměnné 'jmeno'.
+    text = text + " Novák"; 
+}
+```
