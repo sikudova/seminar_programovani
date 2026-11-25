@@ -1,4 +1,4 @@
-# Cvičení 50: validátor českého rodného čísla
+# Cvičení 51: validátor českého rodného čísla
 
 **Cíl:** procvičení tvorby a používání metod
 
